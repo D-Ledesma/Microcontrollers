@@ -1,0 +1,21 @@
+void setup() {
+  // put your setup code here, to run once:
+for (int i=2; i<=13; i++){
+  pinMode(i,OUTPUT);
+}
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(2,1);
+delay(200);
+digitalWrite(3,1);
+delay(200);
+for(int i=4;i<16;i++){
+  digitalWrite(i,1);
+  delay(200);
+  digitalWrite(i-2,0);
+}
+}
+
+###this code causes lights to move across a series of LED lights, begining in a group of three but as the next light turn on the last light turns off
