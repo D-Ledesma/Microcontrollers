@@ -1,0 +1,134 @@
+void n0(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  }
+void n1(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(3, HIGH);
+  digitalWrite(9, HIGH);
+  }
+void n2(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(4, HIGH);
+  }
+void n3(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  }
+void n4(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(7, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(3, HIGH);
+  }
+void n5(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(8, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  }
+void n6(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(6, HIGH);
+  }
+void n7(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(3, HIGH);
+  }
+void n8(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(6, HIGH);
+  }
+void n9(void) {
+  for(int i = 2;i<=9;i++){
+    digitalWrite(i, LOW);
+  }
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(9, HIGH);
+  }
+void setup() {
+for( int i=2; i<=9; i++){
+  pinMode(i, OUTPUT);
+}
+}
+// 2 is period
+// 3 is bottom right
+// 4 is bottom middle
+// 5 is bottom left
+// 6 is middle
+// 7 is top left
+// 8 is top middle
+// 9 is top right
+void loop() {
+n0();
+delay(300);
+n1();
+delay(300);
+n2();
+delay(300);
+n3();
+delay(300);
+n4();
+delay(300);
+n5();
+delay(300);
+n6();
+delay(300);
+n7();
+delay(300);
+n8();
+delay(300);
+n9();
+delay(300);
+}
