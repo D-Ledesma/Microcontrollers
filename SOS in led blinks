@@ -1,0 +1,45 @@
+int i=7;
+
+void setup() {
+  pinMode(5,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(i, 1);
+delay(400);
+digitalWrite(i, 0);
+delay(200);
+digitalWrite(i,1);
+delay(400);
+digitalWrite(i, 0);
+delay(200);
+digitalWrite(i,1);
+delay(400);
+digitalWrite(i,0);
+delay(300);
+digitalWrite(i,1);
+delay(700);
+digitalWrite(i,0);
+delay(200);
+digitalWrite(i,1);
+delay(700);
+digitalWrite(i,0);
+delay(200);
+digitalWrite(i,1);
+delay(700);
+digitalWrite(i,0);
+delay(300);
+digitalWrite(i, 1);
+delay(400);
+digitalWrite(i, 0);
+delay(200);
+digitalWrite(i,1);
+delay(400);
+digitalWrite(i, 0);
+delay(200);
+digitalWrite(i,1);
+delay(400);
+digitalWrite(i,0);
+delay(2000);
+}
