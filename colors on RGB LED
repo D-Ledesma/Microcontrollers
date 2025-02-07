@@ -1,0 +1,17 @@
+void setup() {
+  // put your setup code here, to run once:
+pinMode(9,OUTPUT);
+pinMode(10, OUTPUT);
+pinMode(11, OUTPUT);
+}
+
+void loop() {
+for(int i=9;i<=11;i++){
+for(int j=0;j<=255;j++){
+  analogWrite(i,j);
+  delay(10);
+  analogWrite(i,0);
+}
+}}
+
+//
