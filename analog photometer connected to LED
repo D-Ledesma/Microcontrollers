@@ -1,0 +1,12 @@
+void setup() {
+ pinMode(A1, INPUT);
+ pinMode(3, OUTPUT);
+ Serial.begin(9600);
+}
+
+void loop() {
+  int afk=analogRead(A1);
+  Serial.println(afk);
+
+    analogWrite(3,map(afk,200,1000,255,0));
+}
