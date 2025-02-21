@@ -1,0 +1,30 @@
+void setup() {
+  
+pinMode(A2, INPUT);
+Serial.begin(9600);
+pinMode(3, OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(9,OUTPUT);
+}
+
+void loop() {
+int afk=analogRead(A2);
+float V=((afk/1024.0)*5.0);
+float d=(33.9/V-4.7);
+Serial.println(d);
+delay(100);
+
+analogWrite(9,map(d,9,46,255,0));
+
+if(d<=10){
+  digitalWrite(3,HIGH);
+  digitalWrite(5,LOW);
+}
+else {
+  if (d>=15){
+    digitalWrite(3,LOW);
+    digitalWrite(5,HIGH);
+  }
+}
+
+}
